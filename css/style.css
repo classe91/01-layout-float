@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    color: #fffffe;
+    background: #0f0e17;
+}
+
+header {
+    padding: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+h1,
+h2 {
+    color: #e53170;
+}
+
+h3 {
+    color: #ff8906;
+}
+
+.columns {
+    margin: 50px;
+    background: rgba(255, 255, 0, 0.25);
+}
+.columns .col {
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 15px;
+    text-align: center;
+}
+.columns .col img {
+    height: 150px;
+}
+.columns .col p {
+    font-size: 20px;
+}
+
+/* UTILITIES */
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* CLEARFIX */
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* DEBUG - da applicare al tag <body> */
+.debug .col {
+    height: 300px;
+    background-color: #e53170;
+    border: 1px solid #ff8906;
+}
